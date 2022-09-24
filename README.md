@@ -10,23 +10,21 @@
 #include <iostream>
 #include <cstdio>
 using namespace std;
-
-int main() {
-    // Complete the code.
-    int a,b,i;
-    cin>>a>>b;
-    string num[11] ={"one","two","three","four","five","six","seven","eight","nine"};
-    for(i=a;i<=b;i++){
+int main() 
+{
+    int a,b,i; 
+    cin>>a>>b; // Taking Input of 'a' and 'b'
+    string num[11] ={"one","two","three","four","five","six","seven","eight","nine"}; // Creating an Array
+    for(i=a;i<=b;i++){ //Using For Loop
         if (i>9 && i%2!=0){
-            cout<<"odd"<<endl;
+            cout<<"Odd"<<endl;
         }
         else if(i>9 && i%2==0){
-            cout<<"even"<<endl;;
+            cout<<"Even"<<endl;;
         }
         else{
             cout<<num[i-1]<<endl;
         }
     }
-    
     return 0;
 }
